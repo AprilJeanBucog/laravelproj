@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->timestamps();
         });
+        
         Schema::create('instructors', function (Blueprint $table) {
             $table->id();
             $table->string('name');

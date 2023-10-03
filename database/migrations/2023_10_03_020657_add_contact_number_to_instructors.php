@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('instructors', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->('contact_number', 11)->after('name');
+=======
+            $table->string('contact_number', 11)->after('name'):
+>>>>>>> activity6-laravel-migrations
         });
     }
 
